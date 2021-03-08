@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>SEO</title>
+</head>
+
+<body>
+  <title>This Is The Title Of The Website. Whatever Is Wrapped In The Title Tag Will Usually Show Up As The Heading For
+    Google Searches.</title>
+  <hr />
+  <p>This is some text, wrapped in what is called a p tag. The p tag is usually reserved for text that forms a
+    paragraph.</p>
+  <hr />
+  <h1>This Is A Heading Wrapped In An h1 Tag</h1>
+  <p>For SEO purposes, the h1 tag is usually only used once.</p>
+  <hr />
+  <h2>This Is A Heading Wrapped In An h2 Tag</h2>
+  <p>Headings, in form of h2-h6 can be used multiple times as long as it makes sense with the flow of information.</p>
+  <hr />
+  <h3>HEY OVER HERE! This Is A Hidden Heading, Wrapped In An h3 Tag.</h3>
+  <br />
+  <p>If you right click and select<strong>'View Page Source'</strong>you will see that there is hidden content around
+    line 20. That whole page of code is what the Google spider will read.</p>
+  <button id='javascript-seo-question' onClick="jsQuestion()">Does Javascript Affect SEO? Click To Find Out</button>
+</body>
+
+<script>
+
+  const jsButton = document.getElementById('javascript-seo-question');
+
+  function getRandomColor() {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    jsButton.style.backgroundColor = `${color}`
+  }
+
+
+  const jsQuestion = () => {
+
+    alert(`Yes it does! Javascript is responsible for altering elements on the page, such as the color of the button when OK is clicked. Each time the button is clicked, a random color is generated.`)
+    getRandomColor()
+  }
+
+
+
+
+
+
+</script>
+
+</html>
